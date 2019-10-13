@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FTL Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/ftl.css' %}">
+</head>
+
+<body>
+    <br>
+    <div class="container" align='center'>
+        <h2>Fuzzy search /
+        autocomplete of English words.</h2>
+        <form action="/searchResult" method="GET">
+            <input id="search" type="text" placeholder="search word" name="term" size="25">
+            <input type="submit" value="Search">
+        </form>
+    </div> 
+
+
+    
+    <!-- <div class="topnav">
+        <div class="search-container" align='center'>
+           <h2>anuuuuuuuuuuuuuuuu</h2>
+            <form action="/searchResult" method= "GET">
+                <p align='center'>Fuzzy search /
+                    autocomplete of English words.</p>
+                <input type="text" placeholder="Search.." name="search" id="search" size="25">
+                <button type="submit"> <i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div> -->
+    
+</body>
+</html> 
+
